@@ -1,0 +1,141 @@
+/*---- This is my CSS page.----*/
+body {
+    background-color: #eddbd2; 
+    color: white;  
+    font-family: 'Playfair Display', serif;
+    font-size: 16px; 
+    font-weight: 300;
+    margin:0
+}
+
+header {
+    background-color: #e68267;
+    padding: 1rem 2vw;
+}
+header h1, p{
+  margin: 0;
+  color: white;  
+}
+
+header p{
+    margin: 0;
+    color:  white;
+    letter-spacing: .5px;
+}
+
+/*---- This is the navigation section..----*/
+
+nav {
+  background-color: #cb997e;
+
+}
+
+nav ul{
+  list-style-type: none;
+  padding: 0 2vw;
+  margin: 0; 
+  display: flex;   
+}
+
+nav a {
+  font-size: 1.1rem;
+  text-decoration: none;
+  color: white; 
+  font-weight: 700;
+  display: block;
+  padding: .83rem 2rem;
+}
+
+nav li.active a{
+    background-color: white;
+    color: #e68267;
+}
+
+nav a:hover{
+    color: #e68267;
+}
+
+/*---- This is your main page.----*/
+
+main{
+    padding: 1rem 2vw;
+}
+
+main h1{
+  color: #e68267; 
+}
+
+main h2{
+    color: #e68267;
+    margin-bottom: .2rem;
+}
+
+main p {
+  color: white;
+  margin: 0 0 .3rem 0;
+}
+main ol{
+   padding: .5rem 3vw;
+   background-color: #cb997e;
+   color: white; 
+   width: 12.5rem;
+}
+
+main dl dt {
+    color: #cb997e;
+    font-weight: 700;
+}
+main dl dd {
+    color: white;
+    font-size: .9rem;
+}
+
+main ul{
+    list-style-type: circle;
+    color: white;
+}
+
+main ul li{
+    line-height: 125%;
+    margin-bottom: .5rem;
+    font-size: .9rem;
+}
+
+main address{
+    background-color: #cb997e;
+    color: white; 
+    padding: .5rem;
+    width: 12.5rem;
+    border: 1px solid #e68267;
+    border-radius: .5rem;
+}
+
+main address a {
+    color: white;
+}
+
+main address a:hover{
+    color:#e68267;
+}
+
+/*---- This is the footer section..----*/
+
+footer{
+    background-color: #cb997e;
+    text-align: center;
+    color: white;
+    padding: 1rem 0;
+    font-size: .8rem;
+}
+
+main a {
+    color: #cb997e;
+}
+
+main a:hover {
+    color: white;
+}
+
+footer a{
+    color: #cb997e;
+}
