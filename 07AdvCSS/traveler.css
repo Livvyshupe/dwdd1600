@@ -1,0 +1,289 @@
+/*---- This is my CSS page.----*/
+
+* {box-sizing: border-box;}
+
+body {
+    background-color: #eddbd2; 
+    color: white;  
+    font-family: 'Playfair Display', serif;
+    font-size: 16px; 
+    font-weight: 300;
+    margin:0
+}
+
+header {
+    background-color: #e68267;
+    padding: 1rem 2vw;
+    display: flex;
+    align-items: flex-end;
+}
+header div {
+    padding-left: 2vw;
+}
+header h1, p{
+  margin: 0;
+  color: white;  
+}
+
+header p{
+    margin: 0;
+    color:  white;
+    letter-spacing: .5px;
+}
+
+/*---- This is the navigation section..----*/
+
+/* small screens*/
+
+@media only screen and (max-width: 600px) {
+    nav ul{
+        margin: 0;
+        padding: 0 2vw;
+        list-style-type: none;
+    }
+    nav a {
+        display: block;
+        padding: .8rem;
+        text-decoration: none;
+        font-weight: 700;
+        text-transform: uppercase;
+        text-align: center;
+        border-bottom: solid 1px #eddbd2;
+        color: #cb997e;
+    }
+    nav .active a{
+        background-color: #cb997e;
+        background-image: linear-gradient(#cb997e, #9e7762);
+        color: white;
+    }
+
+} /*end of media query*/
+
+/*big screens*/
+
+@media only screen and (min-width: 601px) {
+    nav {
+        background-color: #cb997e;
+      
+      }
+      
+      nav ul{
+        list-style-type: none;
+        padding: 0 2vw;
+        margin: 0; 
+        display: flex;   
+      }
+      
+      nav a {
+        font-size: 1.1rem;
+        text-decoration: none;
+        color: white; 
+        font-weight: 700;
+        display: block;
+        padding: .83rem 2rem;
+      }
+      
+      nav li.active a{
+          background-color: white;
+          color: #e68267;
+      }
+      
+      nav a:hover{
+          color: #e68267;
+      }
+
+} /*end of media query*/
+
+
+
+
+/*---- This is your main page.----*/
+
+main{
+    padding: 1rem 2vw;
+}
+
+main h1{
+  color: #e68267; 
+}
+
+main h2{
+    color: #e68267;
+    margin-bottom: .2rem;
+}
+
+main p {
+  color: white;
+  margin: 0 0 .3rem 0;
+}
+main ol{
+   padding: .5rem 3vw;
+   background-color: #cb997e;
+   color: white; 
+   width: 12.5rem;
+}
+
+main dl dt {
+    color: #cb997e;
+    font-weight: 700;
+}
+main dl dd {
+    color: white;
+    font-size: .9rem;
+}
+
+main ul{
+    list-style-type: circle;
+    color: white;
+}
+
+main ul li{
+    line-height: 125%;
+    margin-bottom: .5rem;
+    font-size: .9rem;
+}
+
+main address{
+    background-color: #cb997e;
+    color: white; 
+    padding: .5rem;
+    width: 12.5rem;
+    border: 1px solid #e68267;
+    border-radius: .5rem;
+}
+
+main address a {
+    color: white;
+}
+
+main address a:hover{
+    color:#e68267;
+}
+
+.dumbbellsethero {
+    width: 100%;
+    margin: 0;
+}
+
+.dumbbellsethero img {
+    width: 100%;
+    height: auto;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+} 
+.gallery section {
+    flex-basis: 50%;
+    margin: 1rem 0;
+    
+}
+.gallery span {
+    display: block;
+    text-align: center; 
+    font-weight: 700;
+    color: #895772;
+}
+.gallery img {
+    width: 98%;
+    height: auto;
+}
+.gallery img:hover {
+    box-shadow: 0px 0px 10px black;
+}
+
+.myForm fieldset {
+    border: 1px solid #cb997e;
+    border-radius: 3px;
+    margin-bottom: 1rem;
+}
+.myForm legend {
+    color: #cb997e;
+    font-size: .8rem;
+}
+.myForm label{
+    margin: .5rem;
+}
+.myForm label, .myForm select, .myForm [type=text], .myForm [type=tel], .myForm textarea {
+    display: block;
+}
+.myForm select, .myForm [type=text], .myForm [type=tel], .myForm textarea
+{
+    border: solid 1px #cb997e;
+    padding: .3rem;
+    width: 250px;
+    border-radius: .3rem;
+    font-family: 'Playfair Display', serif;
+    font-size: 16px; 
+}
+.myForm textarea {
+    height: 6rem;
+
+}
+.myForm :required 
+{
+   background-color: rgba(156,51,53,0.1); 
+}
+.myForm [type=submit] {
+    background-color: #cb997e;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    color: white;
+    margin: 1rem 0 0 1vw;
+}
+
+
+/*---- This is the footer section..----*/
+
+footer{
+    background-color: #cb997e;
+    text-align: center;
+    color: white;
+    padding: 1rem 0;
+    font-weight: 300;
+}
+
+main a {
+    color: #cb997e;
+}
+
+main a:hover {
+    color: white;
+}
+
+footer a{
+    color: #cb997e;
+}
+figure.wrapped {
+    width: 30%;
+    margin: 0 0 0 2%;
+    float: right;
+
+}
+figure.wrapped img {
+    width: 100%;
+    height: auto;
+}
+figure.wrapped figcaption {
+    text-align: center;
+    font-size: .75rem;
+}
+
+div.gallery {
+    display: flex;
+    flex-wrap: wrap;
+}
+div.gallery figure { 
+    margin: .5rem 2% 0 0;
+}
+div.gallery figcaption {
+    text-align: center;
+    font-size: .8rem;
+    color: #e68267;
+}
+header, nav, main, footer {
+    max-width: 64rem;
+    margin: 0 auto;
+}
