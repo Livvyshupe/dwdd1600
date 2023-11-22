@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta name="description" content="Contact us to start your free consultation."/>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="traveler.css">
+    
+    <meta charset="UTF-8">
+    <title>LivFit Co.</title>
+</head>
+<body>
+    <!-- start the page header -->
+    <header>
+        <h1>Free Consultation</h1>
+        <p>We want to be apart of your fitness journey!</p>
+    </header>
+    
+    <!-- start the page navigation -->
+    <nav>
+        <ul>
+            <li><a href="index.html">About Us</a></li>
+            <li class="active"><a href="consultation.html">Request a Free Consultation</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+    </nav>
+    
+    <!-- start the page main -->
+    <main>
+        <h1>Request a Free Consultation</h1>
+        <form method="get" class="myForm" action="thanks.html">
+
+        <fieldset>
+            <legend>Customer Information</legend>
+            <label>First Name*<input type="text" name="fname" required></label>
+            <label>Last Name*<input type="text" name="lname" required></label>
+            <label>Cell Number*<input type="tel" name="phone" required placeholder="987-555-1234"></label>
+        </fieldset>
+
+        <fieldset>
+            <legend>What Fitness Level Are You?</legend>
+                <label><input type="radio" name="method" value="beginner">Beginner</label>
+                <label><input type="radio" name="method" value="intermediate">Intermediate</label>
+                <label><input type="radio" name="method" value="advanced">Advanced (Aethletic training) (6hrs)</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Workouts That You Are Interested In: Cardiorespiratory</legend>
+                    <label><input type="checkbox" name="run" value="chosen"> Running</label>
+                    <label><input type="checkbox" name="walk" value="chosen"> Walking</label>
+                    <label><input type="checkbox" name="bike" value="chosen"> Biking</label>
+                    <label><input type="checkbox" name="hiit" value="chosen"> HIIT</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Workouts That You Are Interested In: Strength Training</legend>
+                    <label><input type="checkbox" name="heavy" value="chosen"> Heavy Weight</label>
+                    <label><input type="checkbox" name="body" value="chosen"> Body-weight</label>
+                    <label><input type="checkbox" name="hiit" value="chosen"> HIIT</label>
+                    <label><input type="checkbox" name="mix" value="chosen"> Mixture</label>
+                   
+                <label>Preferred Contact Time
+                    <select name="time">
+                    <option value="none">Please Select</option>
+                    <option value="morning">Between 7:00am and 11:00am</option>
+                    <option value="noon">Between 11:00am and 2:00pm</option>
+                    <option value="afternoon">Between 2:00pm and 5:00pm</option>
+                    <option value="evening">Between 5:00pm and 8:00pm</option>
+                    </select>
+                </label>
+
+                </fieldset>
+
+                <label>Comments
+                    <textarea name="comments">Please Add Any Additional Information</textarea>
+                </label>
+
+
+        <input type="submit" value="Request a Free Consultation">
+        </form>
+       
+       
+        
+    </main>
+    
+    <!-- start the page footer -->
+    <footer>
+        <p>&copy;2021 &bull; LivFit &bull; <a href="10901627@uvu.edu">Email Us</a> </p>
+    </footer>
+</body>
+</html>
